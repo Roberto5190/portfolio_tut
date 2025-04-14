@@ -1,6 +1,6 @@
 import React from 'react'
 import { words } from '../../constants'
-
+import Button from '../components/Button'
 
 const Hero = () => {
   return (
@@ -38,6 +38,11 @@ const Hero = () => {
                     <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
                         Hi, I'm Roberto, a developer with a passion for creating beautiful and functional websites and applications.
                     </p>
+                    <Button 
+                        className='md:w-80 md:h-16 w-60 h-12' 
+                        id='button'
+                        text='See my work'
+                    />
                 </div>
             </header>
             {/* RIGHT: 3D MODEL*/}
