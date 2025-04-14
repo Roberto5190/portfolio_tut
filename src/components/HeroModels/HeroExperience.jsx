@@ -3,15 +3,13 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
 import { Room } from './Room'
-
+import HeroLights from './HeroLights'
 const HeroExperience = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   return (
     <Canvas camera={{ position: [100, 180, 280], fov: 45}}>
-        <ambientLight intensity={0.2} color="#1a1a40" />
-        <directionalLight position={[5, 5, 5]} intensity={3} />
 
         <OrbitControls
             enablePan={false}
@@ -23,9 +21,11 @@ const HeroExperience = () => {
             enableRotate={true}
         />
 
+        <HeroLights />
+
         <group 
             scale={isMobile ? 0.9 : 1}
-            position={isMobile ? [0, 10, 0] : [0, -80, 0]}
+            position={[0, -80, 0]}
             rotation={[ 0, Math.PI /1 - 0.3, 0]}
         >
             <Room />
