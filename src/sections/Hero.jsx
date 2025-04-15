@@ -39,7 +39,7 @@ const Hero = () => {
               <h1>that deliver results</h1>
             </div>
 
-            <p className="text-white-50 w-[45ch]  md:text-xl relative z-10 pointer-events-none">
+            <p className="text-white-50 max-w-[45ch]  md:text-xl relative z-10 pointer-events-none">
               Hi, I'm Roberto, a developer with a passion for creating beautiful
               and functional websites and applications.
             </p>
