@@ -2,6 +2,7 @@ import Hero from './sections/Hero'
 import ShowCaseSection from './sections/ShowCaseSection'
 import NavBar from './components/NavBar'
 import LogoSection from './components/LogoSection'
+import FeatureCards from './sections/FeatureCards'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <ShowCaseSection />
       <LogoSection />
+      <FeatureCards />
     </>
   )
 }
