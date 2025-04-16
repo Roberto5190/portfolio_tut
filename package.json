@@ -17,6 +17,7 @@
     "@types/three": "^0.175.0",
     "gsap": "^3.12.4",
     "react": "^18.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-responsive": "^10.0.1",
     "three": "^0.175.0"
