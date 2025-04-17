@@ -5,7 +5,7 @@ import LogoSection from './components/LogoSection'
 import FeatureCards from './sections/FeatureCards'
 import ExperienceSection from './sections/ExperienceSection'
 import TechStack from './sections/TechStack'
-
+import Testimonials from './sections/Testimonials'
 function App() {
 
   return (
@@ -17,6 +17,7 @@ function App() {
       <FeatureCards />
       <ExperienceSection />
       <TechStack />
+      <Testimonials />
     </>
   )
 }
